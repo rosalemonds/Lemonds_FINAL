@@ -1,21 +1,34 @@
 body {
         font-family: Arial, sans-serif;
-        margin: 0;
         padding: 0;
 }
 
 
-#OnSeasonBG {
-    align-items: center;
+#OnSeasonBG { 
+    
     background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
     min-height: 5in;
-    
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    align-items: center;
 }
 
 #OnSeasonText {
     background-color:pink;
     color: $white;
-    margin: 24px 0 0 16px;
-    padding: 24px 40px;
+    margin: 90px 150px 24px 150px;
+    padding: 100px 40px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+
+    h1 { 
+        text-align: center;
+        margin: 10px;
+    }
+
+    p { 
+        text-align: center;
+    }
 }
