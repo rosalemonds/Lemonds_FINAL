@@ -1,11 +1,21 @@
 body {
-        font-family: Arial, sans-serif;
-        padding: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
 }
 
+#whattodo {
+    div {
+        >h1 {
+            background-color: #6D874C;
+            color: #F4EACF;
+            padding: 20px;
+        }
+    }
 
-#OnSeasonBG { 
-    
+}
+
+#OnSeasonBG {
+
     background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
     min-height: 5in;
     background-repeat: no-repeat;
@@ -15,20 +25,48 @@ body {
 }
 
 #OnSeasonText {
-    background-color:pink;
+    background-color: pink;
     color: $white;
-    margin: 90px 150px 24px 150px;
-    padding: 100px 40px;
+    margin: 70px 150px 24px 150px;
+    padding: 60px 40px;
     text-align: center;
     vertical-align: middle;
     position: absolute;
 
-    h1 { 
+    h1 {
         text-align: center;
         margin: 10px;
     }
 
-    p { 
+    p {
         text-align: center;
+    }
+}
+
+#OffSeasonBG {
+    background-image: url("../img/whattodo/DESK7698_4063_Acadia_Cross_Country_Skiing_lg.png");
+    min-height: 5in;
+
+    #OffSeasonHeader {
+        // background-size: cover;
+        background-color: pink;
+        color: white;
+        //text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        margin: 70px 150px 24px 150px;
+        padding: 30px 40px;
+
+    }
+
+    #OffSeasonText {
+        background-color: pink;
+        color: white;
+        text-align: center;
+        vertical-align: bottom;
+        position: absolute;
+        //margin: 70px 150px 24px 150px;
+        padding: 30px 40px;
+
     }
 }

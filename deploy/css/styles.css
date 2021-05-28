@@ -434,6 +434,12 @@ body {
   padding: 0;
 }
 
+#whattodo div > h1 {
+  background-color: #6D874C;
+  color: #F4EACF;
+  padding: 20px;
+}
+
 #OnSeasonBG {
   background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
   min-height: 5in;
@@ -446,8 +452,8 @@ body {
 #OnSeasonText {
   background-color: pink;
   color: #fff;
-  margin: 90px 150px 24px 150px;
-  padding: 100px 40px;
+  margin: 70px 150px 24px 150px;
+  padding: 60px 40px;
   text-align: center;
   vertical-align: middle;
   position: absolute;
@@ -458,4 +464,46 @@ body {
 }
 #OnSeasonText p {
   text-align: center;
+}
+
+#OffSeasonBG {
+  background-image: url("../img/whattodo/DESK7698_4063_Acadia_Cross_Country_Skiing_lg.png");
+  min-height: 5in;
+}
+#OffSeasonBG #OffSeasonHeader {
+  background-color: pink;
+  color: white;
+  vertical-align: middle;
+  position: absolute;
+  margin: 70px 150px 24px 150px;
+  padding: 30px 40px;
+}
+#OffSeasonBG #OffSeasonText {
+  background-color: pink;
+  color: white;
+  text-align: center;
+  vertical-align: bottom;
+  position: absolute;
+  padding: 30px 40px;
+}
+
+#wildlife div > h1 {
+  background-color: #6D874C;
+  color: #F4EACF;
+  padding: 20px;
+}
+#wildlife #wildlifeheadline {
+  padding: 6px;
+}
+#wildlife p {
+  padding: 6px;
+}
+#wildlife button {
+  box-align: center;
+}
+
+#maps div h1 {
+  background-color: #6D874C;
+  color: #F4EACF;
+  padding: 20px;
 }
