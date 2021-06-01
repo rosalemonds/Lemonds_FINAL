@@ -352,11 +352,23 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
-body {
-  font-family: "Open Sans", sans-serif;
+h1, h2 {
+  font-family: "Merriweather", serif;
+}
+
+h3, h4, p {
+  font-family: "Muli", serif;
 }
 
 h1, h2, h3, h4 {
@@ -422,6 +434,15 @@ a {
 /* =============
     Header
 ============= */
+header div section h4 {
+  background-color: #C44640;
+  color: white;
+  padding: 7px;
+}
+header div section img {
+  margin: 10px;
+}
+
 /* =============
     Footer
 ============= */
@@ -430,7 +451,7 @@ img {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  background-color: #FFFBF2;
   padding: 0;
 }
 
@@ -443,14 +464,20 @@ body {
 #OnSeasonBG {
   background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
   min-height: 5in;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   align-items: center;
+  border-style: solid;
+  border-color: #DEA68E;
+  border-width: 6px;
+  margin: 72px 5px 72px 5px;
 }
 
 #OnSeasonText {
-  background-color: pink;
+  background-color: #DEA68E;
   color: #fff;
   margin: 70px 150px 24px 150px;
   padding: 60px 40px;
@@ -469,9 +496,13 @@ body {
 #OffSeasonBG {
   background-image: url("../img/whattodo/DESK7698_4063_Acadia_Cross_Country_Skiing_lg.png");
   min-height: 5in;
+  border-style: solid;
+  border-color: #DEA68E;
+  border-width: 6px;
+  margin: 72px 5px 72px 5px;
 }
 #OffSeasonBG #OffSeasonHeader {
-  background-color: pink;
+  background-color: #DEA68E;
   color: white;
   vertical-align: middle;
   position: absolute;
@@ -479,12 +510,72 @@ body {
   padding: 30px 40px;
 }
 #OffSeasonBG #OffSeasonText {
-  background-color: pink;
+  background-color: #DEA68E;
   color: white;
   text-align: center;
   vertical-align: bottom;
   position: absolute;
   padding: 30px 40px;
+}
+
+#PermitBG {
+  background-image: url("../img/whattodo/HD20200601_ANP_ParkOpening_066.png");
+  min-height: 5in;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  border-style: solid;
+  border-color: #DEA68E;
+  border-width: 6px;
+  margin: 72px 5px 72px 5px;
+}
+
+#PermitText {
+  background-color: #DEA68E;
+  color: #fff;
+  margin: 70px 150px 24px 150px;
+  padding: 60px 40px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+}
+#PermitText h1 {
+  text-align: center;
+  margin: 10px;
+}
+#PermitText p {
+  text-align: center;
+}
+
+#InvolvedBG {
+  background-image: url("../img/whattodo/HDDDDDIMG_7414_1.png");
+  min-height: 5in;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  border-style: solid;
+  border-color: #DEA68E;
+  border-width: 6px;
+  margin: 72px 5px 72px 5px;
+}
+
+#InvolvedText {
+  background-color: #DEA68E;
+  color: #fff;
+  margin: 70px 150px 24px 150px;
+  padding: 60px 40px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+}
+#InvolvedText h1 {
+  text-align: center;
+  margin: 10px;
+}
+#InvolvedText p {
+  text-align: center;
 }
 
 #wildlife div > h1 {
@@ -498,7 +589,60 @@ body {
 #wildlife p {
   padding: 6px;
 }
+#EtiquetteBGs h2 {
+  background-color: #F4EACF;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#wildlifeDistance {
+  text-align: left;
+}
+
+#distanceText {
+  text-align: left;
+}
+
+#wildlifeTrail {
+  text-align: right;
+}
+
+#trailText {
+  text-align: right;
+}
+
+#wildlifeFeed {
+  text-align: left;
+}
+
+#feedText {
+  text-align: left;
+}
+
+#wildlifeCampsite {
+  text-align: right;
+}
+
+#campsiteText {
+  text-align: right;
+}
+
+#wildlifeSlow {
+  text-align: left;
+}
+
+#slowText {
+  text-align: left;
+}
+
 #maps div h1 {
+  background-color: #6D874C;
+  color: #F4EACF;
+  padding: 20px;
+}
+
+#news {
   background-color: #6D874C;
   color: #F4EACF;
   padding: 20px;

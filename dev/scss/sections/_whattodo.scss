@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #FFFBF2;
     padding: 0;
 }
 
@@ -18,14 +18,21 @@ body {
 
     background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
     min-height: 5in;
+  
+    display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     align-items: center;
+    border-style: solid;
+    border-color: #DEA68E;
+    border-width: 6px;
+    margin: 72px 5px 72px 5px;
 }
 
 #OnSeasonText {
-    background-color: pink;
+    background-color: #DEA68E;
     color: $white;
     margin: 70px 150px 24px 150px;
     padding: 60px 40px;
@@ -46,10 +53,14 @@ body {
 #OffSeasonBG {
     background-image: url("../img/whattodo/DESK7698_4063_Acadia_Cross_Country_Skiing_lg.png");
     min-height: 5in;
+    border-style: solid;
+    border-color: #DEA68E;
+    border-width: 6px;
+    margin: 72px 5px 72px 5px;
 
     #OffSeasonHeader {
         // background-size: cover;
-        background-color: pink;
+        background-color: #DEA68E;
         color: white;
         //text-align: center;
         vertical-align: middle;
@@ -60,7 +71,7 @@ body {
     }
 
     #OffSeasonText {
-        background-color: pink;
+        background-color: #DEA68E;
         color: white;
         text-align: center;
         vertical-align: bottom;
@@ -70,3 +81,70 @@ body {
 
     }
 }
+
+#PermitBG {
+
+    background-image: url("../img/whattodo/HD20200601_ANP_ParkOpening_066.png");
+    min-height: 5in;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    border-style: solid;
+    border-color: #DEA68E;
+    border-width: 6px;
+    margin: 72px 5px 72px 5px;
+}
+
+#PermitText {
+    background-color: #DEA68E;
+    color: $white;
+    margin: 70px 150px 24px 150px;
+    padding: 60px 40px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+#InvolvedBG {
+
+    background-image: url("../img/whattodo/HDDDDDIMG_7414_1.png");
+    min-height: 5in;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    border-style: solid;
+    border-color: #DEA68E;
+    border-width: 6px;
+    margin: 72px 5px 72px 5px;
+}
+
+#InvolvedText {
+    background-color: #DEA68E;
+    color: $white;
+    margin: 70px 150px 24px 150px;
+    padding: 60px 40px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
