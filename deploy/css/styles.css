@@ -461,6 +461,14 @@ body {
   padding: 20px;
 }
 
+@media (min-width: 768px) {
+  section #gridjazz {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 5px auto 5px;
+    grid-template-areas: "p p . i i";
+  }
+}
 #OnSeasonBG {
   background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
   min-height: 5in;
@@ -475,8 +483,7 @@ body {
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
-
-#OnSeasonText {
+#OnSeasonBG #OnSeasonText {
   background-color: #DEA68E;
   color: #fff;
   margin: 70px 150px 24px 150px;
@@ -485,11 +492,11 @@ body {
   vertical-align: middle;
   position: absolute;
 }
-#OnSeasonText h1 {
+#OnSeasonBG #OnSeasonText h1 {
   text-align: center;
   margin: 10px;
 }
-#OnSeasonText p {
+#OnSeasonBG #OnSeasonText p {
   text-align: center;
 }
 
@@ -518,7 +525,8 @@ body {
   padding: 30px 40px;
 }
 
-#PermitBG {
+#PermitBG div {
+  grid-area: p;
   background-image: url("../img/whattodo/HD20200601_ANP_ParkOpening_066.png");
   min-height: 5in;
   background-repeat: no-repeat;
@@ -530,8 +538,7 @@ body {
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
-
-#PermitText {
+#PermitBG #PermitText {
   background-color: #DEA68E;
   color: #fff;
   margin: 70px 150px 24px 150px;
@@ -540,15 +547,16 @@ body {
   vertical-align: middle;
   position: absolute;
 }
-#PermitText h1 {
+#PermitBG #PermitText h1 {
   text-align: center;
   margin: 10px;
 }
-#PermitText p {
+#PermitBG #PermitText p {
   text-align: center;
 }
 
-#InvolvedBG {
+#InvolvedBG div {
+  grid-area: i;
   background-image: url("../img/whattodo/HDDDDDIMG_7414_1.png");
   min-height: 5in;
   background-repeat: no-repeat;
@@ -560,8 +568,7 @@ body {
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
-
-#InvolvedText {
+#InvolvedBG #InvolvedText {
   background-color: #DEA68E;
   color: #fff;
   margin: 70px 150px 24px 150px;
@@ -570,11 +577,11 @@ body {
   vertical-align: middle;
   position: absolute;
 }
-#InvolvedText h1 {
+#InvolvedBG #InvolvedText h1 {
   text-align: center;
   margin: 10px;
 }
-#InvolvedText p {
+#InvolvedBG #InvolvedText p {
   text-align: center;
 }
 
@@ -640,6 +647,13 @@ body {
   background-color: #6D874C;
   color: #F4EACF;
   padding: 20px;
+}
+#maps ul li h3 {
+  color: #946D5B;
+  margin: 24px 6px 24px 6px;
+}
+#maps ul li p {
+  margin: 6px;
 }
 
 #news {
