@@ -1,18 +1,60 @@
 /* =============
     Header
 ============= */
-header{
-    div{
-        section{
-            h4{
+header {
+    div {
+        section {
+            h4 {
                 background-color: #C44640;
                 color: white;
-                padding: 7px;
+                padding: 10px;
             }
 
-            img{
+            img {
                 margin: 10px;
             }
         }
     }
+
+
+    #npsBack {
+        background-color: #4F6138;
+        color: #f4eacf;
+        font-family: "Muli", serif;
+
+        display: grid;
+        grid-template-columns: 90px auto;
+        grid-template-areas:
+            "l n"
+            "l h"
+            "l a";
+    }
+
+    #npsLogo {
+        grid-area: l;
+        margin: 10px;
+    }
+
+    #nps {
+        grid-area: n;
+        margin: 10px;
+        h3{
+            font-size: 25px;
+        }
+    }
+
+    #hr {
+        grid-area: h;
+        margin: 10px;
+    }
+
+    #anp {
+        grid-area: a;
+        margin: 10px;
+        font-size: 30px;
+        // font-weight: bold;
+    }
+
+
+
 }

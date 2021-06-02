@@ -437,10 +437,38 @@ a {
 header div section h4 {
   background-color: #C44640;
   color: white;
-  padding: 7px;
+  padding: 10px;
 }
 header div section img {
   margin: 10px;
+}
+header #npsBack {
+  background-color: #4F6138;
+  color: #f4eacf;
+  font-family: "Muli", serif;
+  display: grid;
+  grid-template-columns: 90px auto;
+  grid-template-areas: "l n" "l h" "l a";
+}
+header #npsLogo {
+  grid-area: l;
+  margin: 10px;
+}
+header #nps {
+  grid-area: n;
+  margin: 10px;
+}
+header #nps h3 {
+  font-size: 25px;
+}
+header #hr {
+  grid-area: h;
+  margin: 10px;
+}
+header #anp {
+  grid-area: a;
+  margin: 10px;
+  font-size: 30px;
 }
 
 /* =============
@@ -448,6 +476,13 @@ header div section img {
 ============= */
 img {
   max-width: 100vw;
+}
+
+#heroText h2 {
+  margin: 72px 6px 24px 6px;
+}
+#heroText p {
+  margin: 0px 6px 72px 6px;
 }
 
 body {
@@ -458,17 +493,15 @@ body {
 #whattodo div > h1 {
   background-color: #6D874C;
   color: #F4EACF;
-  padding: 20px;
+  padding: 40px 40px 40px 16px;
+  margin: 72px 115px 24px 0px;
 }
-
 @media (min-width: 768px) {
-  section #gridjazz {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 5px auto 5px;
-    grid-template-areas: "p p . i i";
+  #whattodo div > h1 {
+    margin: 0px;
   }
 }
+
 #OnSeasonBG {
   background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
   min-height: 5in;
@@ -503,32 +536,40 @@ body {
 #OffSeasonBG {
   background-image: url("../img/whattodo/DESK7698_4063_Acadia_Cross_Country_Skiing_lg.png");
   min-height: 5in;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
   border-style: solid;
   border-color: #DEA68E;
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
-#OffSeasonBG #OffSeasonHeader {
-  background-color: #DEA68E;
-  color: white;
-  vertical-align: middle;
-  position: absolute;
-  margin: 70px 150px 24px 150px;
-  padding: 30px 40px;
-}
 #OffSeasonBG #OffSeasonText {
   background-color: #DEA68E;
-  color: white;
+  color: #fff;
+  margin: 70px 150px 24px 150px;
+  padding: 60px 40px;
   text-align: center;
-  vertical-align: bottom;
+  vertical-align: middle;
   position: absolute;
-  padding: 30px 40px;
+}
+#OffSeasonBG #OffSeasonText h1 {
+  text-align: center;
+  margin: 10px;
+}
+#OffSeasonBG #OffSeasonText p {
+  text-align: center;
 }
 
-#PermitBG div {
+#PermitBG {
   grid-area: p;
   background-image: url("../img/whattodo/HD20200601_ANP_ParkOpening_066.png");
   min-height: 5in;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -555,10 +596,12 @@ body {
   text-align: center;
 }
 
-#InvolvedBG div {
+#InvolvedBG {
   grid-area: i;
   background-image: url("../img/whattodo/HDDDDDIMG_7414_1.png");
   min-height: 5in;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -585,34 +628,77 @@ body {
   text-align: center;
 }
 
+#wildlife #firstBullet img {
+  grid-area: o;
+  margin: 30px;
+}
+@media (min-width: 768px) {
+  #wildlife #firstBullet {
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-areas: "o h" "o t";
+  }
+}
 #wildlife div > h1 {
   background-color: #6D874C;
   color: #F4EACF;
-  padding: 20px;
+  padding: 40px 40px 40px 16px;
+  margin: 72px 115px 0px 0px;
+}
+@media (min-width: 768px) {
+  #wildlife div > h1 {
+    margin: 0px;
+  }
 }
 #wildlife #wildlifeheadline {
-  padding: 6px;
+  margin: 72px 6px 24px 6px;
 }
 #wildlife p {
-  padding: 6px;
+  margin: 6px;
 }
 #EtiquetteBGs h2 {
   background-color: #F4EACF;
   padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #EtiquetteBGs h2 {
+    background-color: #FFFBF2;
+  }
+}
+#EtiquetteBGs #etiquetteandsafety {
+  text-align: center;
+  margin: 24px 6px 24px 6px;
 }
 
 #wildlifeDistance {
+  grid-area: h;
   text-align: left;
+  margin: 16px 215px 16px 0px;
+}
+@media (min-width: 768px) {
+  #wildlifeDistance {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlifeDistance {
+    margin: 16px 215px 16px 180px;
+  }
+}
+@media (min-width: 1200px) {
+  #wildlifeDistance {
+    margin: 16px 215px 16px 260px;
+  }
 }
 
 #distanceText {
+  grid-area: t;
   text-align: left;
 }
 
 #wildlifeTrail {
   text-align: right;
+  margin: 16px 0px 16px 215px;
 }
 
 #trailText {
@@ -621,6 +707,7 @@ body {
 
 #wildlifeFeed {
   text-align: left;
+  margin: 16px 215px 16px 0px;
 }
 
 #feedText {
@@ -629,6 +716,7 @@ body {
 
 #wildlifeCampsite {
   text-align: right;
+  margin: 16px 0px 16px 175px;
 }
 
 #campsiteText {
@@ -637,6 +725,7 @@ body {
 
 #wildlifeSlow {
   text-align: left;
+  margin: 16px 175px 16px 0px;
 }
 
 #slowText {
@@ -646,7 +735,13 @@ body {
 #maps div h1 {
   background-color: #6D874C;
   color: #F4EACF;
-  padding: 20px;
+  padding: 40px 40px 40px 16px;
+  margin: 72px 115px 24px 0px;
+}
+@media (min-width: 768px) {
+  #maps div h1 {
+    margin: 72px 0px 24px 0px;
+  }
 }
 #maps ul li h3 {
   color: #946D5B;
@@ -659,5 +754,11 @@ body {
 #news {
   background-color: #6D874C;
   color: #F4EACF;
-  padding: 20px;
+  padding: 40px 40px 40px 16px;
+  margin: 72px 115px 24px 0px;
+}
+@media (min-width: 768px) {
+  #news {
+    margin: 72px 0px 24px 0px;
+  }
 }

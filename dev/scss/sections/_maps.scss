@@ -3,7 +3,12 @@
         h1 {
             background-color: #6D874C;
             color: #F4EACF;
-            padding: 20px;
+            padding: 40px 40px 40px 16px;
+            margin: 72px 115px 24px 0px;
+
+            @include md {
+                margin: 72px 0px 24px 0px;
+            }
         }
     }
 

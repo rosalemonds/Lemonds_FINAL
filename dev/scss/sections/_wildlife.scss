@@ -1,20 +1,44 @@
 #wildlife {
 
+
+    #firstBullet {
+        img {
+            grid-area: o;
+            margin: 30px;
+            //display: none;
+        }
+        @include md {
+            display: grid;
+            grid-template-columns: 125px auto;
+            grid-template-areas:
+                "o h"
+                "o t";
+        }
+
+
+    }
+
     div {
         >h1 {
             background-color: #6D874C;
             color: #F4EACF;
-            padding: 20px;
+            padding: 40px 40px 40px 16px;
+            margin: 72px 115px 0px 0px;
+
+            @include md {
+                margin: 0px;
+            }
         }
     }
 
     #wildlifeheadline {
-
-        padding: 6px;
+        
+        margin: 72px 6px 24px 6px;
     }
 
     p {
-        padding: 6px;
+        
+        margin: 6px;
     }
 
     button {}
@@ -25,38 +49,67 @@
     h2 {
         background-color: #F4EACF;
         padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+
+        @include md {
+            background-color: #FFFBF2;
+        }
+
+    }
+
+
+
+    #etiquetteandsafety {
+        text-align: center;
+        margin: 24px 6px 24px 6px;
     }
 
 }
 
 #wildlifeDistance {
+    grid-area: h;
     text-align: left;
+    margin: 16px 215px 16px 0px;
+
+    @include md {
+        text-align: left;
+        //margin: 16px 215px 16px 100px;
+    }
+
+    @include lg {
+        margin: 16px 215px 16px 180px;
+    }
+
+    @include xl {
+        margin: 16px 215px 16px 260px;
+    }
 }
 
 #distanceText {
+    grid-area: t;
     text-align: left;
 }
 
 #wildlifeTrail {
     text-align: right;
+    margin: 16px 0px 16px 215px;
 }
 
-#trailText{
+#trailText {
     text-align: right;
 }
 
 #wildlifeFeed {
     text-align: left;
+    margin: 16px 215px 16px 0px;
 }
 
-#feedText{
+#feedText {
     text-align: left;
 }
 
 #wildlifeCampsite {
     text-align: right;
+    margin: 16px 0px 16px 175px;
 }
 
 #campsiteText {
@@ -65,8 +118,9 @@
 
 #wildlifeSlow {
     text-align: left;
+    margin: 16px 175px 16px 0px;
 }
 
-#slowText{
+#slowText {
     text-align: left;
 }

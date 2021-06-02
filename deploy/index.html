@@ -23,18 +23,26 @@
         <section>
             <h4>Covid-19 Response</h4>
         </section>
-        <section>
-            <img src="img/HDNPS (1).png" alt="National Park Service Logo">
-            <h1>National Park Service</h1>
-            <hr>
-            <h1>Acadia National Park</h1>
-        </section>
+        <div id="npsBack">
+            <img id="npsLogo" src="img/HDNPS (1).png" alt="National Park Service Logo">
+            <ul>
+                <li id="nps">
+                    <h3>National Park Service</h3>
+                </li>
+                <li id="hr">
+                    <hr>
+                </li>
+                <li id="anp">
+                    <h3>Acadia National Park</h3>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
 <section>
     <img src="img/hero/HDWelcome-to-Acadia-National-Park.png" alt="Photo of Acadia National Park">
 </section>
-<section>
+<section id="heroText">
     <h2>Welcome to Acadia!</h2>
     <p>Acadia National Park in Bar Harbor, Maine, protects the natural beauty of the highest rocky headlands
         along the Atlantic coastline of the United States, an abundance of habitats, and a rich cultural
@@ -47,6 +55,8 @@
         <h1>What to do</h1>
     </div>
     <div>
+
+
         <div id="OnSeasonBG">
             <div id="OnSeasonText">
                 <h2>On Season</h2>
@@ -54,32 +64,46 @@
                     more! </p>
             </div>
         </div>
-    </div>
-    <div id="OffSeasonBG">
-        <h2 id="OffSeasonHeader">Off Season</h2>
-        <p id="OffSeasonText">There's lots to do and discover in
-            Acadia during the off season.</p>
-    </div>
-    <section id="gridjazz">
-        <div id="PermitBG">
-            <div id="PermitText">
-                <h2>Permit Info & Purchasing</h2>
-                <p>
-                    Learn about park entry fees and annual passes including how to buy, print, and display your pass on
-                    your
-                    dashboard before you get here.
-                </p>
+
+        <div id="OffSeasonBG">
+            <div id="OffSeasonText">
+                <h2>Off Season</h2>
+                <p>There's lots to do and discover in
+                    Acadia during the off season.</p>
             </div>
         </div>
-        <div id="InvolvedBG">
-            <div id="InvolvedText">
-                <h2>Getting Involved</h2>
-                <p>Review a list of current volunteer opportunities and other ways to get involved to find the right
-                    Acadia
-                    experience for you.</p>
+
+
+    </div>
+
+
+
+
+    <ul>
+        <li>
+            <div id="PermitBG">
+                <div id="PermitText">
+                    <h2>Permit Info & Purchasing</h2>
+                    <p>
+                        Learn about park entry fees and annual passes including how to buy, print, and display your pass
+                        on
+                        your
+                        dashboard before you get here.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </li>
+        <li>
+            <div id="InvolvedBG">
+                <div id="InvolvedText">
+                    <h2>Getting Involved</h2>
+                    <p>Review a list of current volunteer opportunities and other ways to get involved to find the right
+                        Acadia
+                        experience for you.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
 </section>
 <section id="wildlife">
     <div>
@@ -96,22 +120,23 @@
         <button>Learn More</button>
     </div>
     <div id="EtiquetteBGs">
-        <h2>Wildlife Etiquette and Safety</h2>
-        <section>
+        <h2 id="etiquetteandsafety">Wildlife Etiquette and Safety</h2>
+        <section id="firstBullet">
+            <img src="img/wildlife/Oval.png" alt="bullet point">
             <h2 id="wildlifeDistance">Keep your distance</h2>
             <p id="distanceText">Please give the animals the space they need! Depending on the animal, there are recommended safe
                 distances to view them at.</p>
         </section>
-        <section>
+        <section id="secondBullet">
             <h2 id="wildlifeTrail">Stay on the trail</h2>
             <p id="trailText">Stepping off trail to get a closer view can disrupt wildlife and can cause damage to the fragile
                 ecosystems in the park.</p>
         </section>
-        <section>
+        <section id="thirdBullet">
             <h2 id="wildlifeFeed">Don't feed animals</h2>
             <p id="feedText">Feeding wildlife can habituate them to human presence and hurt their chances of survival.</p>
         </section>
-        <section>
+        <section id="fourthBullet">
             <h2 id="wildlifeCampsite">Make your campsite or picnic wildlife safe</h2>
             <p id="campsiteText">All human food and pet food must be stored in a hard-sided food locker or enclosed vehicle when not in
                 use. Additionally, make sure to clean up your site when you leave, and dispose of garbage properly. Even
@@ -119,7 +144,7 @@
                 become negatively impacted when trash and food is improperly stored.
             </p>
         </section>
-        <section>
+        <section id="fifthBullet">
             <h2 id="wildlifeSlow">Slow down for wildlife</h2>
             <p id="slowText"> The park speed limits exist to keep visitors and wildlife safe. Use extra caution when driving at dawn,
                 dusk or nighttime, as these tend to be the hours when wildlife is most active.
@@ -168,7 +193,7 @@
     <ul>
         <li>
             <h5>1/12/2021</h5>
-            <h1>Preparations Begin for Construction on Eagle Lake Carriage Road in Acadia National Park</h1>
+            <h3>Preparations Begin for Construction on Eagle Lake Carriage Road in Acadia National Park</h3>
             <p>Hikers, bikers, and horseback riders may experience reduced access temporarily to Eagle Lake Carriage
                 Road in Acadia National Park this summer during a project to rehabilitate the carriage road while
                 preserving its historic character.</p>
@@ -178,7 +203,7 @@
         
         <li>
             <h5>11/23/2020</h5>
-            <h1>Park Loop Road will close to motor vehicles for the season on Dec 1</h1>
+            <h3>Park Loop Road will close to motor vehicles for the season on Dec 1</h3>
             <p>The Park Loop Road will close to motor vehicles for the season, with the exception of the two-mile
                 section from the Sand Beach Entrance Station to Otter Cliff Road and access to the Jordan Pond area.
             </p>
@@ -188,8 +213,8 @@
         
         <li>
             <h5>9/24/2020</h5>
-            <h1>Acadia National Park Announces Vehicle Reservations for the Sand Beach Entrance and Cadillac Summit Road
-            </h1>
+            <h3>Acadia National Park Announces Vehicle Reservations for the Sand Beach Entrance and Cadillac Summit Road
+            </h3>
             <p>The National Park Service has developed a vehicle reservation system to reduce severe traffic and parking
                 congestion so visitors can plan ahead and have a more enjoyable visit to Acadia National Park. </p>
                 <img src="" alt="Worker scanning Acadia ticket">
