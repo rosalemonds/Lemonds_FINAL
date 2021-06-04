@@ -12,27 +12,25 @@
         }
     }
 
-    
-        ul{
-            li{
-                h3{
-                    color: #946D5B;
-                    margin: 24px 6px 24px 6px;
-                }
-                p{
-                    margin: 6px;
-                }
+
+    ul {
+        li {
+            h3 {
+                color: #946D5B;
+                margin: 24px 6px 24px 6px;
+            }
+
+            p {
+                margin: 6px;
             }
         }
-    
 
-    // ul { 
-    //     li {
-    //         button {
-    //             align-items: center;
-    //         }
-    //     }
-    // }
-    
+        button {
+            display: block;
+            margin: 24px auto 24px auto;
+            background-color: #dea68e;
+            border: none;
+            padding: 20px;
+        }
+    }
 }
-

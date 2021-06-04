@@ -367,7 +367,7 @@ h1, h2 {
   font-family: "Merriweather", serif;
 }
 
-h3, h4, p {
+h3, h4, p, button {
   font-family: "Muli", serif;
 }
 
@@ -519,7 +519,6 @@ body {
 #OnSeasonBG #OnSeasonText {
   background-color: #DEA68E;
   color: #fff;
-  margin: 70px 150px 24px 150px;
   padding: 60px 40px;
   text-align: center;
   vertical-align: middle;
@@ -749,6 +748,13 @@ body {
 }
 #maps ul li p {
   margin: 6px;
+}
+#maps ul button {
+  display: block;
+  margin: 24px auto 24px auto;
+  background-color: #dea68e;
+  border: none;
+  padding: 20px;
 }
 
 #news {
