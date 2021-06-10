@@ -1,3 +1,33 @@
 /* =============
-    Footer
+    Footer.....i'm sorry tressley
+    i wouldve literally ceased to exist 
+    if i tried to code that footer
+
+    appreciate u
 ============= */
+#mobtabfoot {
+
+    width: 100%;
+
+    @include lg {
+        display: none;
+    }
+
+    @include xl {
+        display: none;
+    }
+}
+
+#deskfoot {
+
+    width: 100%;
+    display: none;
+
+    @include lg {
+        display: block;
+    }
+
+    @include xl {
+        display: block;
+    }
+}

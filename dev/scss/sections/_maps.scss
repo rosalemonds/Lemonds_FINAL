@@ -1,4 +1,11 @@
 #maps {
+
+    h6{
+        background-color: #F4EACF;
+        padding: 6px;
+        width: .75in;
+        margin-left: 16px;
+    }
     div {
         h1 {
             background-color: #6D874C;
@@ -14,23 +21,99 @@
 
 
     ul {
-        li {
-            h3 {
-                color: #946D5B;
-                margin: 24px 6px 24px 6px;
+
+        #beehive,
+        #gorham,
+        #cadillac {
+
+
+            @include md {
+                display: grid;
+                margin: 72px 18px 72px 9px;
+                grid-template-columns: 35% 65%;
+                grid-template-areas:
+                    "p t"
+                    "p b"
+                    "hr hr";
             }
 
-            p {
-                margin: 6px;
+            @include lg {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "p t i"
+                    "hr hr hr";
+            }
+
+            div {
+                grid-area: t;
+
+                h3 {
+                    color: #946D5B;
+                    margin: 24px 6px 24px 6px;
+                }
+
+                p {
+                    margin: 6px;
+                }
+
+                @include lg {
+                    margin-top: 40%;
+                }
+            }
+
+
+
+
+            hr {
+                grid-area: hr;
+
+                @include md {
+                    width: 97%;
+                }
+            }
+
+            img {
+                grid-area: p;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 97%;
+            }
+        }
+
+        #beehiveinfo,
+        #gorhaminfo,
+        #cadillacinfo {
+            grid-area: i;
+            display: none;
+            text-align: right;
+            margin: 0px;
+
+            @include lg {
+                display: block;
+                margin-top: 45%;
             }
         }
 
         button {
+            grid-area: b;
             display: block;
             margin: 24px auto 24px auto;
             background-color: #dea68e;
             border: none;
             padding: 20px;
+
+            @include md {
+                // margin-top: 180px;
+                width: 2.5in;
+                position: relative;
+                top: 80px;
+            }
+
+            @include lg {
+                display: none;
+            }
         }
     }
 }

@@ -367,7 +367,7 @@ h1, h2 {
   font-family: "Merriweather", serif;
 }
 
-h3, h4, p, button {
+h3, h4, h6, li, p, button {
   font-family: "Muli", serif;
 }
 
@@ -442,6 +442,18 @@ header div section h4 {
 header div section img {
   margin: 10px;
 }
+header div section #covidshit {
+  display: none;
+  color: white;
+  padding: 0px 10px 4px 10px;
+  background-color: #C44640;
+}
+@media (min-width: 768px) {
+  header div section #covidshit {
+    display: block;
+    margin: 0px;
+  }
+}
 header #npsBack {
   background-color: #4F6138;
   color: #f4eacf;
@@ -472,8 +484,41 @@ header #anp {
 }
 
 /* =============
-    Footer
+    Footer.....i'm sorry tressley
+    i wouldve literally ceased to exist 
+    if i tried to code that footer
+
+    appreciate u
 ============= */
+#mobtabfoot {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #mobtabfoot {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #mobtabfoot {
+    display: none;
+  }
+}
+
+#deskfoot {
+  width: 100%;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #deskfoot {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  #deskfoot {
+    display: block;
+  }
+}
+
 img {
   max-width: 100vw;
 }
@@ -501,6 +546,21 @@ body {
     margin: 0px;
   }
 }
+@media (min-width: 768px) {
+  #whattodo #lilgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "p i";
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #whattodo #lilgrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "p" "i";
+  }
+}
 
 #OnSeasonBG {
   background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
@@ -516,13 +576,31 @@ body {
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
+@media (min-width: 768px) {
+  #OnSeasonBG {
+    margin: 99px;
+  }
+}
+@media (min-width: 1024px) {
+  #OnSeasonBG {
+    margin: 146px;
+  }
+}
 #OnSeasonBG #OnSeasonText {
-  background-color: #DEA68E;
+  background-color: #DEA68E99;
   color: #fff;
+  margin: 70px 150px 24px 150px;
   padding: 60px 40px;
   text-align: center;
   vertical-align: middle;
   position: absolute;
+}
+#OnSeasonBG #OnSeasonText #OnSeasonHeader {
+  background-color: #DEA68E;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 6px;
+  padding: 10px;
 }
 #OnSeasonBG #OnSeasonText h1 {
   text-align: center;
@@ -530,6 +608,16 @@ body {
 }
 #OnSeasonBG #OnSeasonText p {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #OnSeasonBG #OnSeasonText {
+    margin: 70px 121px 24px 121px;
+  }
+}
+@media (min-width: 1024px) {
+  #OnSeasonBG #OnSeasonText {
+    margin: 70px 277px 24px 277px;
+  }
 }
 
 #OffSeasonBG {
@@ -546,8 +634,18 @@ body {
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
+@media (min-width: 768px) {
+  #OffSeasonBG {
+    margin: 99px;
+  }
+}
+@media (min-width: 1024px) {
+  #OffSeasonBG {
+    margin: 146px;
+  }
+}
 #OffSeasonBG #OffSeasonText {
-  background-color: #DEA68E;
+  background-color: #DEA68E99;
   color: #fff;
   margin: 70px 150px 24px 150px;
   padding: 60px 40px;
@@ -555,12 +653,29 @@ body {
   vertical-align: middle;
   position: absolute;
 }
+#OffSeasonBG #OffSeasonText #OffSeasonHeader {
+  background-color: #DEA68E;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 6px;
+  padding: 10px;
+}
 #OffSeasonBG #OffSeasonText h1 {
   text-align: center;
   margin: 10px;
 }
 #OffSeasonBG #OffSeasonText p {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #OffSeasonBG #OffSeasonText {
+    margin: 70px 121px 24px 121px;
+  }
+}
+@media (min-width: 1024px) {
+  #OffSeasonBG #OffSeasonText {
+    margin: 70px 277px 24px 277px;
+  }
 }
 
 #PermitBG {
@@ -578,8 +693,19 @@ body {
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
+@media (min-width: 1024px) {
+  #PermitBG {
+    background-position: right;
+    background-size: 100%;
+    background-color: #DEA68E;
+    margin: 146px;
+  }
+  #PermitBG #PermitText {
+    height: 42%;
+  }
+}
 #PermitBG #PermitText {
-  background-color: #DEA68E;
+  background-color: #DEA68E99;
   color: #fff;
   margin: 70px 150px 24px 150px;
   padding: 60px 40px;
@@ -587,12 +713,30 @@ body {
   vertical-align: middle;
   position: absolute;
 }
+#PermitBG #PermitText #PermitHeader {
+  background-color: #DEA68E;
+  padding: 10px;
+}
+@media (min-width: 1024px) {
+  #PermitBG #PermitText #PermitHeader {
+    padding-top: 120px;
+  }
+}
 #PermitBG #PermitText h1 {
   text-align: center;
   margin: 10px;
 }
 #PermitBG #PermitText p {
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #PermitBG #PermitText {
+    position: absolute;
+    left: 0px;
+    width: 25%;
+    margin: 400px 200px 400px 150px;
+    background-color: #DEA68E;
+  }
 }
 
 #InvolvedBG {
@@ -610,14 +754,34 @@ body {
   border-width: 6px;
   margin: 72px 5px 72px 5px;
 }
+@media (min-width: 1024px) {
+  #InvolvedBG {
+    background-position: right;
+    background-size: 100%;
+    background-color: #DEA68E;
+    margin: 146px;
+  }
+  #InvolvedBG #PermitText {
+    height: 42%;
+  }
+}
 #InvolvedBG #InvolvedText {
-  background-color: #DEA68E;
+  background-color: #DEA68E99;
   color: #fff;
   margin: 70px 150px 24px 150px;
   padding: 60px 40px;
   text-align: center;
   vertical-align: middle;
   position: absolute;
+}
+#InvolvedBG #InvolvedText #InvolvedHeader {
+  background-color: #DEA68E;
+  padding: 10px;
+}
+@media (min-width: 1024px) {
+  #InvolvedBG #InvolvedText #InvolvedHeader {
+    padding-top: 140px;
+  }
 }
 #InvolvedBG #InvolvedText h1 {
   text-align: center;
@@ -626,18 +790,17 @@ body {
 #InvolvedBG #InvolvedText p {
   text-align: center;
 }
-
-#wildlife #firstBullet img {
-  grid-area: o;
-  margin: 30px;
-}
-@media (min-width: 768px) {
-  #wildlife #firstBullet {
-    display: grid;
-    grid-template-columns: 125px auto;
-    grid-template-areas: "o h" "o t";
+@media (min-width: 1024px) {
+  #InvolvedBG #InvolvedText {
+    position: absolute;
+    right: 0px;
+    width: 25%;
+    height: 42%;
+    margin: 400px 150px 400px 600px;
+    background-color: #DEA68E;
   }
 }
+
 #wildlife div > h1 {
   background-color: #6D874C;
   color: #F4EACF;
@@ -649,12 +812,62 @@ body {
     margin: 0px;
   }
 }
+#wildlife div #learnmorebutton {
+  display: block;
+  margin: 24px auto 24px auto;
+  background-color: #dea68e;
+  border: none;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  #wildlife div #learnmorebutton {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife div #learnmorebutton {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #wildlife div #learnmorebutton {
+    display: none;
+  }
+}
 #wildlife #wildlifeheadline {
   margin: 72px 6px 24px 6px;
+}
+@media (min-width: 1024px) {
+  #wildlife #wildlifeheadline {
+    margin-left: 93px;
+    margin-right: 93px;
+  }
 }
 #wildlife p {
   margin: 6px;
 }
+#wildlife #wildlifeparagraph #xtrawild {
+  display: none;
+}
+@media (min-width: 768px) {
+  #wildlife #wildlifeparagraph {
+    margin-left: 105px;
+    margin-right: 105px;
+  }
+  #wildlife #wildlifeparagraph #xtrawild {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife #wildlifeparagraph {
+    margin-left: 93px;
+    margin-right: 93px;
+  }
+  #wildlife #wildlifeparagraph #xtrawild {
+    display: block;
+  }
+}
+
 #EtiquetteBGs h2 {
   background-color: #F4EACF;
   padding: 10px;
@@ -668,26 +881,57 @@ body {
   text-align: center;
   margin: 24px 6px 24px 6px;
 }
+@media (min-width: 768px) {
+  #EtiquetteBGs #etiquetteandsafety {
+    background-color: #F4EACF;
+    margin-left: 106px;
+    margin-right: 106px;
+  }
+}
+@media (min-width: 1024px) {
+  #EtiquetteBGs #etiquetteandsafety {
+    margin-left: 267px;
+    margin-right: 267px;
+  }
+}
+@media (min-width: 1200px) {
+  #EtiquetteBGs #etiquetteandsafety {
+    margin-left: 380px;
+    margin-right: 380px;
+  }
+}
+
+#firstBullet img {
+  grid-area: o;
+  margin: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #firstBullet {
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-areas: "o h" "o t";
+  }
+  #firstBullet img {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #firstBullet {
+    margin-left: 91px;
+  }
+}
+@media (min-width: 1200px) {
+  #firstBullet {
+    margin-left: 170px;
+  }
+}
 
 #wildlifeDistance {
   grid-area: h;
   text-align: left;
   margin: 16px 215px 16px 0px;
-}
-@media (min-width: 768px) {
-  #wildlifeDistance {
-    text-align: left;
-  }
-}
-@media (min-width: 1024px) {
-  #wildlifeDistance {
-    margin: 16px 215px 16px 180px;
-  }
-}
-@media (min-width: 1200px) {
-  #wildlifeDistance {
-    margin: 16px 215px 16px 260px;
-  }
 }
 
 #distanceText {
@@ -695,31 +939,167 @@ body {
   text-align: left;
 }
 
+#secondBullet img {
+  grid-area: o;
+  margin: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #secondBullet {
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-areas: "o h" "o t";
+  }
+  #secondBullet img {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #secondBullet {
+    margin-left: 91px;
+  }
+}
+@media (min-width: 1200px) {
+  #secondBullet {
+    margin-left: 170px;
+  }
+}
+
 #wildlifeTrail {
+  grid-area: h;
   text-align: right;
   margin: 16px 0px 16px 215px;
 }
+@media (min-width: 768px) {
+  #wildlifeTrail {
+    text-align: left;
+    margin: 16px 0px 16px 0px;
+  }
+}
 
 #trailText {
+  grid-area: t;
   text-align: right;
+}
+@media (min-width: 768px) {
+  #trailText {
+    text-align: left;
+  }
+}
+
+#thirdBullet img {
+  grid-area: o;
+  margin: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #thirdBullet {
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-areas: "o h" "o t";
+  }
+  #thirdBullet img {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #thirdBullet {
+    margin-left: 91px;
+  }
+}
+@media (min-width: 1200px) {
+  #thirdBullet {
+    margin-left: 170px;
+  }
 }
 
 #wildlifeFeed {
+  grid-area: h;
   text-align: left;
   margin: 16px 215px 16px 0px;
 }
 
 #feedText {
+  grid-area: t;
   text-align: left;
 }
 
+#fourthBullet img {
+  grid-area: o;
+  margin: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #fourthBullet {
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-areas: "o h" "o t";
+  }
+  #fourthBullet img {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #fourthBullet {
+    margin-left: 91px;
+  }
+}
+@media (min-width: 1200px) {
+  #fourthBullet {
+    margin-left: 170px;
+  }
+}
+
 #wildlifeCampsite {
+  grid-area: h;
   text-align: right;
   margin: 16px 0px 16px 175px;
 }
+@media (min-width: 768px) {
+  #wildlifeCampsite {
+    text-align: left;
+    margin: 16px 0px 16px 0px;
+  }
+}
 
 #campsiteText {
+  grid-area: t;
   text-align: right;
+}
+@media (min-width: 768px) {
+  #campsiteText {
+    text-align: left;
+  }
+}
+
+#fifthBullet img {
+  grid-area: o;
+  margin: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #fifthBullet {
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-areas: "o h" "o t";
+  }
+  #fifthBullet img {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #fifthBullet {
+    margin-left: 91px;
+  }
+}
+@media (min-width: 1200px) {
+  #fifthBullet {
+    margin-left: 170px;
+  }
 }
 
 #wildlifeSlow {
@@ -731,6 +1111,12 @@ body {
   text-align: left;
 }
 
+#maps h6 {
+  background-color: #F4EACF;
+  padding: 6px;
+  width: 0.75in;
+  margin-left: 16px;
+}
 #maps div h1 {
   background-color: #6D874C;
   color: #F4EACF;
@@ -742,19 +1128,104 @@ body {
     margin: 72px 0px 24px 0px;
   }
 }
-#maps ul li h3 {
+@media (min-width: 768px) {
+  #maps ul #beehive,
+#maps ul #gorham,
+#maps ul #cadillac {
+    display: grid;
+    margin: 72px 18px 72px 9px;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "p t" "p b" "hr hr";
+  }
+}
+@media (min-width: 1024px) {
+  #maps ul #beehive,
+#maps ul #gorham,
+#maps ul #cadillac {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "p t i" "hr hr hr";
+  }
+}
+#maps ul #beehive div,
+#maps ul #gorham div,
+#maps ul #cadillac div {
+  grid-area: t;
+}
+#maps ul #beehive div h3,
+#maps ul #gorham div h3,
+#maps ul #cadillac div h3 {
   color: #946D5B;
   margin: 24px 6px 24px 6px;
 }
-#maps ul li p {
+#maps ul #beehive div p,
+#maps ul #gorham div p,
+#maps ul #cadillac div p {
   margin: 6px;
 }
+@media (min-width: 1024px) {
+  #maps ul #beehive div,
+#maps ul #gorham div,
+#maps ul #cadillac div {
+    margin-top: 40%;
+  }
+}
+#maps ul #beehive hr,
+#maps ul #gorham hr,
+#maps ul #cadillac hr {
+  grid-area: hr;
+}
+@media (min-width: 768px) {
+  #maps ul #beehive hr,
+#maps ul #gorham hr,
+#maps ul #cadillac hr {
+    width: 97%;
+  }
+}
+#maps ul #beehive img,
+#maps ul #gorham img,
+#maps ul #cadillac img {
+  grid-area: p;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+}
+#maps ul #beehiveinfo,
+#maps ul #gorhaminfo,
+#maps ul #cadillacinfo {
+  grid-area: i;
+  display: none;
+  text-align: right;
+  margin: 0px;
+}
+@media (min-width: 1024px) {
+  #maps ul #beehiveinfo,
+#maps ul #gorhaminfo,
+#maps ul #cadillacinfo {
+    display: block;
+    margin-top: 45%;
+  }
+}
 #maps ul button {
+  grid-area: b;
   display: block;
   margin: 24px auto 24px auto;
   background-color: #dea68e;
   border: none;
   padding: 20px;
+}
+@media (min-width: 768px) {
+  #maps ul button {
+    width: 2.5in;
+    position: relative;
+    top: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  #maps ul button {
+    display: none;
+  }
 }
 
 #news {
@@ -766,5 +1237,127 @@ body {
 @media (min-width: 768px) {
   #news {
     margin: 72px 0px 24px 0px;
+  }
+}
+
+#newsContainer h6 {
+  background-color: #F4EACF;
+  padding: 6px;
+  width: 0.75in;
+  margin-left: 16px;
+}
+#newsContainer div #parkloop {
+  display: none;
+}
+#newsContainer div #eaglelake {
+  display: none;
+}
+#newsContainer div #vehiclereg {
+  display: none;
+}
+#newsContainer div h3 {
+  grid-area: t;
+  color: #946D5B;
+  margin: 16px;
+}
+#newsContainer div p {
+  grid-area: p;
+  margin: 16px;
+}
+#newsContainer div h5 {
+  grid-area: d;
+  margin: 16px;
+}
+#newsContainer div #newspic1,
+#newsContainer div #newspic2,
+#newsContainer div #newspic3 {
+  grid-area: i;
+  display: none;
+  width: 100%;
+}
+#newsContainer div hr {
+  grid-area: hr;
+  width: 97%;
+}
+#newsContainer div #newspic3 {
+  display: block;
+}
+@media (min-width: 768px) {
+  #newsContainer div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "d d i" "t t i" "p p i" "hr hr hr";
+  }
+  #newsContainer div #parkloop {
+    display: block;
+  }
+  #newsContainer div #eaglelake {
+    display: block;
+  }
+  #newsContainer div #vehiclereg {
+    display: block;
+  }
+  #newsContainer div h3 {
+    margin-top: 20px;
+    font-size: 21px;
+  }
+  #newsContainer div p {
+    margin-bottom: 100px;
+    font-size: 18px;
+  }
+  #newsContainer div h5 {
+    font-size: 21px;
+  }
+  #newsContainer div #newspic1,
+#newsContainer div #newspic2,
+#newsContainer div #newspic3 {
+    display: block;
+    width: 3.75in;
+  }
+}
+@media (min-width: 1024px) {
+  #newsContainer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "n1 n3" "n2 n3";
+  }
+  #newsContainer #news1 {
+    display: block;
+    grid-area: n1;
+  }
+  #newsContainer #news1 img {
+    width: 7in;
+    margin: 20px;
+  }
+  #newsContainer #news1 p {
+    margin-bottom: 10px;
+  }
+  #newsContainer #news2 {
+    display: block;
+    grid-area: n2;
+  }
+  #newsContainer #news2 img {
+    width: 7in;
+    margin: 20px;
+  }
+  #newsContainer #news2 p {
+    margin-bottom: 10px;
+  }
+  #newsContainer #news3 {
+    display: block;
+    grid-area: n3;
+  }
+  #newsContainer #news3 img {
+    width: 3in;
+  }
+  #newsContainer #news3 p {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #newsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "n1 n2 n3";
   }
 }

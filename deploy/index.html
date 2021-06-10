@@ -22,6 +22,10 @@
     <div>
         <section>
             <h4>Covid-19 Response</h4>
+            <h6 id="covidshit">Face masks are required on NPS-administered lands where physical distancing cannot be maintained and in
+                all NPS buildings and facilities. Park operations vary based on local public health conditions. Before
+                visiting, please check the park website to determine its operating status. Additional details are
+                available at www.nps.gov/coronavirus. Please recreate responsibly.</h6>
         </section>
         <div id="npsBack">
             <img id="npsLogo" src="img/HDNPS (1).png" alt="National Park Service Logo">
@@ -59,7 +63,7 @@
 
         <div id="OnSeasonBG">
             <div id="OnSeasonText">
-                <h2>On Season</h2>
+                <h2 id="OnSeasonHeader">On Season</h2>
                 <p> Acadia has plenty of activities for everyone, like hiking, biking, birdwatching, stargazing and
                     more! </p>
             </div>
@@ -67,7 +71,7 @@
 
         <div id="OffSeasonBG">
             <div id="OffSeasonText">
-                <h2>Off Season</h2>
+                <h2 id="OffSeasonHeader">Off Season</h2>
                 <p>There's lots to do and discover in
                     Acadia during the off season.</p>
             </div>
@@ -79,11 +83,11 @@
 
 
 
-    <ul>
+    <ul id="lilgrid">
         <li>
             <div id="PermitBG">
                 <div id="PermitText">
-                    <h2>Permit Info & Purchasing</h2>
+                    <h2 id="PermitHeader">Permit Info & Purchasing</h2>
                     <p>
                         Learn about park entry fees and annual passes including how to buy, print, and display your pass
                         on
@@ -96,7 +100,7 @@
         <li>
             <div id="InvolvedBG">
                 <div id="InvolvedText">
-                    <h2>Getting Involved</h2>
+                    <h2 id="InvolvedHeader">Getting Involved</h2>
                     <p>Review a list of current volunteer opportunities and other ways to get involved to find the right
                         Acadia
                         experience for you.</p>
@@ -114,39 +118,51 @@
     </div>
     <div>
         <h2 id="wildlifeheadline">Are there otters in Otter Cove? Seals in Seal Harbor? Eagles at Eagle Lake?</h2>
-        <p>As anyone who has had the good fortune of experiencing it knows, there’s nothing quite like spotting a wild
+        <p id="wildlifeparagraph">As anyone who has had the good fortune of experiencing it knows, there’s nothing quite
+            like spotting a wild
             animal in its natural habitat. While seeing wildlife is never guaranteed, knowing a little more will
-            increase the likelihood and make those chance encounters even sweeter.</p>
-        <button>Learn More</button>
+            increase the likelihood and make those chance encounters even sweeter. <span id="xtrawild">All it takes is
+                patience, keen senses and a little luck! For suggestions on locations in the park with potential for
+                wildlife sightings, check out this Tour de Wildlife.</span></p>
+        <button id="learnmorebutton">Learn More</button>
     </div>
     <div id="EtiquetteBGs">
         <h2 id="etiquetteandsafety">Wildlife Etiquette and Safety</h2>
         <section id="firstBullet">
             <img src="img/wildlife/Oval.png" alt="bullet point">
             <h2 id="wildlifeDistance">Keep your distance</h2>
-            <p id="distanceText">Please give the animals the space they need! Depending on the animal, there are recommended safe
+            <p id="distanceText">Please give the animals the space they need! Depending on the animal, there are
+                recommended safe
                 distances to view them at.</p>
         </section>
         <section id="secondBullet">
+            <img src="img/wildlife/Oval.png" alt="bullet point">
             <h2 id="wildlifeTrail">Stay on the trail</h2>
-            <p id="trailText">Stepping off trail to get a closer view can disrupt wildlife and can cause damage to the fragile
+            <p id="trailText">Stepping off trail to get a closer view can disrupt wildlife and can cause damage to the
+                fragile
                 ecosystems in the park.</p>
         </section>
         <section id="thirdBullet">
+            <img src="img/wildlife/Oval.png" alt="bullet point">
             <h2 id="wildlifeFeed">Don't feed animals</h2>
-            <p id="feedText">Feeding wildlife can habituate them to human presence and hurt their chances of survival.</p>
+            <p id="feedText">Feeding wildlife can habituate them to human presence and hurt their chances of survival.
+            </p>
         </section>
         <section id="fourthBullet">
+            <img src="img/wildlife/Oval.png" alt="bullet point">
             <h2 id="wildlifeCampsite">Make your campsite or picnic wildlife safe</h2>
-            <p id="campsiteText">All human food and pet food must be stored in a hard-sided food locker or enclosed vehicle when not in
+            <p id="campsiteText">All human food and pet food must be stored in a hard-sided food locker or enclosed
+                vehicle when not in
                 use. Additionally, make sure to clean up your site when you leave, and dispose of garbage properly. Even
                 though black bear sightings are rare, racoons and other animals with a great sense of smell can still
                 become negatively impacted when trash and food is improperly stored.
             </p>
         </section>
         <section id="fifthBullet">
+            <img src="img/wildlife/Oval.png" alt="bullet point">
             <h2 id="wildlifeSlow">Slow down for wildlife</h2>
-            <p id="slowText"> The park speed limits exist to keep visitors and wildlife safe. Use extra caution when driving at dawn,
+            <p id="slowText"> The park speed limits exist to keep visitors and wildlife safe. Use extra caution when
+                driving at dawn,
                 dusk or nighttime, as these tend to be the hours when wildlife is most active.
             </p>
         </section>
@@ -158,29 +174,68 @@
         <img src="img/maps/HDdownload.png" alt="Map of Acadia">
     </div>
     <ul>
-        <li>
-            <h3>Hike Beehive Loop</h3>
-            <p>This is a 1.4 mile loop trail that ascends a 450 ft cliff face. Exposed cliffs, iron rungs, and granite
-                staircases climb this trail revealing scenic ocean views.</p>
-            <button>Learn More</button>
+        <li id="beehive">
+            <div>
+                <h3>Hike Beehive Loop</h3>
+                <p>This is a 1.4 mile loop trail that ascends a 450 ft cliff face. Exposed cliffs, iron rungs, and
+                    granite
+                    staircases climb this trail revealing scenic ocean views.</p>
+                <button>Learn More</button>
+            </div>
+            <ul id="beehiveinfo">
+                <li>Type: Hiking</li>
+                <li>Duration: 1-3 Hours</li>
+                <li>Reservations: No</li>
+                <li>Pets: No</li>
+                <li>Location: The Beehive</li>
+                <li>Season: Spring, Summer, Fall</li>
+                <li>Time Of Day: Day, Dawn</li>
+            </ul>
             <img src="img/maps/HDDDD20AEDDF6-9415-29A0-6478DA340C944123.png" alt="Person hiking Beehive Loop">
+        </li>
+        <li>
             <hr>
         </li>
-        
-        <li>
-            <h3>Hike Gorham Mountain Loop</h3>
-            <p>The Gorham Mountain Loop is 3.5 miles featuring mountains and a rocky coastline with panoramic views of
-                Mount Desert Island, Frenchman Bay, and the outlying islands.</p>
-            <button>Learn More</button>
+
+        <li id="gorham">
+            <div>
+                <h3>Hike Gorham Mountain Loop</h3>
+                <p>The Gorham Mountain Loop is 3.5 miles featuring mountains and a rocky coastline with panoramic views
+                    of
+                    Mount Desert Island, Frenchman Bay, and the outlying islands.</p>
+                <button>Learn More</button>
+            </div>
+            <ul id="gorhaminfo">
+                <li>Type: Front-Country Hiking</li>
+                <li>Duration: 1-3 Hours</li>
+                <li>Reservations: Yes</li>
+                <li>Pets: Yes</li>
+                <li>Location: Gorham Mountain Summit</li>
+                <li>Season: Winter, Spring, Summer, Fall</li>
+                <li>Time Of Day: Day, Dawn, Dusk</li>
+            </ul>
             <img src="img/maps/HD22D9D32B-EE4B-8CC1-0DE8ED652FA0B7C6.png" alt="Gorham mountain">
+        </li>
+        <li>
             <hr>
         </li>
-        
-        <li>
-            <h3>Hike Cadillac South Ridge Trail</h3>
-            <p>This out and back trail is the longer option for hiking Cadillac Mountain with spectacular views of the
-                Atlantic Ocean and outlying islands before reaching the summit.</p>
-            <button>Learn More</button>
+        <li id="cadillac">
+            <div>
+                <h3>Hike Cadillac South Ridge Trail</h3>
+                <p>This out and back trail is the longer option for hiking Cadillac Mountain with spectacular views of
+                    the
+                    Atlantic Ocean and outlying islands before reaching the summit.</p>
+                <button>Learn More</button>
+            </div>
+            <ul id="cadillacinfo">
+                <li>Type: Hiking</li>
+                <li>Duration: 2-4 Hours</li>
+                <li>Reservations: No</li>
+                <li>Pets: Yes</li>
+                <li>Location: Cadillac South Ridge Trail</li>
+                <li>Season: Winter, Spring, Summer, Fall</li>
+                <li>Time Of Day: Day, Night, Dawn, Dusk</li>
+            </ul>
             <img src="img/maps/HDSouthern-view-from-South-Ridge-Trail-128.25.png" alt="Cadillac South Ridge Trail">
             <hr>
         </li>
@@ -188,46 +243,58 @@
     </ul>
     <h6>Page 1 of 3</h6>
 </section>
-<section>
-    <h1 id="news">News</h1>
-    <ul>
-        <li>
-            <h5>1/12/2021</h5>
-            <h3>Preparations Begin for Construction on Eagle Lake Carriage Road in Acadia National Park</h3>
-            <p>Hikers, bikers, and horseback riders may experience reduced access temporarily to Eagle Lake Carriage
-                Road in Acadia National Park this summer during a project to rehabilitate the carriage road while
-                preserving its historic character.</p>
-            <img src="" alt="Acadia construction">
-            <hr>
-        </li>
-        
-        <li>
-            <h5>11/23/2020</h5>
-            <h3>Park Loop Road will close to motor vehicles for the season on Dec 1</h3>
-            <p>The Park Loop Road will close to motor vehicles for the season, with the exception of the two-mile
-                section from the Sand Beach Entrance Station to Otter Cliff Road and access to the Jordan Pond area.
-            </p>
-            <img src="" alt="Park Loop Road map image">
-            <hr>
-        </li>
-        
-        <li>
-            <h5>9/24/2020</h5>
-            <h3>Acadia National Park Announces Vehicle Reservations for the Sand Beach Entrance and Cadillac Summit Road
-            </h3>
-            <p>The National Park Service has developed a vehicle reservation system to reduce severe traffic and parking
-                congestion so visitors can plan ahead and have a more enjoyable visit to Acadia National Park. </p>
-                <img src="" alt="Worker scanning Acadia ticket">
-                <hr>
-        </li>
-        
-        <h6>Page 1 of 3</h6>
-    </ul>
+<h1 id="news">News</h1>
+
+<section id="newsContainer">
+    <div id="news1">
+        <h5>1/12/2021</h5>
+        <h3 id="newstitle1">Preparations Begin for Construction on Eagle Lake Carriage Road in Acadia National Park</h3>
+        <p id="newstext1">Hikers, bikers, and horseback riders may experience reduced access temporarily to Eagle Lake
+            Carriage Road in Acadia National Park this summer during a project to rehabilitate the carriage road while
+            preserving its historic character. <span id="eaglelake">The work is currently planned for completion by
+                mid-September.
+                Closure updates will be posted routinely on the park’s Current Conditions webpage. The Island Explorer
+                bus system and Bike Express will not provide service to Eagle Lake in 2021.</span></p>
+        <img id="newspic1" src="img/news/HDCutting-crew.png" alt="Acadia construction">
+        <hr>
+    </div>
+
+    <div id="news2">
+        <h5>11/23/2020</h5>
+        <h3 id="newstitle2">Park Loop Road will close to motor vehicles for the season on Dec 1</h3>
+        <p id="newstext2">The Park Loop Road will close to motor vehicles for the season, with the exception of the
+            two-mile section from the Sand Beach Entrance Station to Otter Cliff Road and access to the Jordan Pond
+            area. <span id="parkloop"> Snowmobiles are permitted on the closed sections of the Park Loop Road and on the
+                unplowed lane between the
+                Sand Beach Entrance Station and Otter Cliff Road. In the event of inclement weather, all sections of the
+                Park Loop Road may be closed. </span>
+        </p>
+        <img id="newspic2" src="img/news/HDWinterAccessMap2019_v12-19_1.png" alt="Park Loop Road map image">
+        <hr>
+    </div>
+
+    <div id="news3">
+        <h5>9/24/2020</h5>
+        <h3 id="newstitle3">Acadia National Park Announces Vehicle Reservations for the Sand Beach Entrance and Cadillac
+            Summit Road
+        </h3>
+        <p id="newstext3">The National Park Service has developed a vehicle reservation system to reduce severe traffic
+            and parking congestion so visitors can plan ahead and have a more enjoyable visit to Acadia National Park.
+            <span id="vehiclereg">As a pilot to prepare for the 2021 season, reservations will be required for vehicles
+                to enter the Sand Beach Entrance and Cadillac Summit Road from October 1 to 18, 2020. Vehicle
+                reservations are available for purchase only online at Recreation.gov.</span> </p>
+        <img id="newspic3" src="img/news/HDIMG_7886.png" alt="Worker scanning Acadia ticket">
+        <hr>
+    </div>
+
+
+
+    <h6>Page 1 of 3</h6>
 </section>
 <footer>
     <section>
         <div>
-            <h4>Acadia National Park</h4>
+            <!-- <h4>Acadia National Park</h4>
             <h5>Contact Us</h5>
             <ul>
                 <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
@@ -246,7 +313,10 @@
             <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
             <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-        </ul>
+        </ul> -->
+
+        <img id="mobtabfoot" src="img/mobileandtabletfooter.png" alt="mobile and tablet footer">
+        <img id="deskfoot" src="img/desktopfooter.png" alt="desktop footer">
         </div>
     </section>
 </footer>

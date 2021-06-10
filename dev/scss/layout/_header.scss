@@ -13,6 +13,17 @@ header {
             img {
                 margin: 10px;
             }
+
+            #covidshit{
+                display: none;
+                color: white;
+                padding: 0px 10px 4px 10px;
+                background-color: #C44640;
+                @include md {
+                    display: block;
+                    margin: 0px;
+                }
+            }
         }
     }
 

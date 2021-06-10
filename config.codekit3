@@ -21,6 +21,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/desktopfooter.png" : {
+      "ft" : 32768,
+      "iS" : 52489,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/desktopfooter.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/HDNPS (1).png" : {
       "ft" : 32768,
       "iS" : 11887,
@@ -91,6 +104,19 @@
       "iS" : 266712,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/maps\/HDSouthern-view-from-South-Ridge-Trail-128.25.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/mobileandtabletfooter.png" : {
+      "ft" : 32768,
+      "iS" : 17775,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/mobileandtabletfooter.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

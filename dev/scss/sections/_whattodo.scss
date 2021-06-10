@@ -19,28 +19,26 @@ body {
         }
     }
 
-    // ul {
-    //     li {
-
-    //         #PermitBG {
-    //             @include md {
 
 
+    #lilgrid {
+        @include md {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "p i";
+            gap: 16px;
+        }
 
-    //                 //margin: 10px;
-    //                 display: grid;
+        @include lg {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-areas:
+                "p"
+                "i";
+        }
 
-    //                 grid-template-columns: repeat(5, 1fr);
-    //                 grid-template-rows: 5px auto 5px;
-    //                 grid-template-areas:
-    //                     "p p . i i";
-    //             }
-    //         }
-
-    //     }
-    // }
-
-
+    }
 
 }
 
@@ -58,7 +56,6 @@ body {
 
     background-image: url("../img/whattodo/DESK20190717_JordanPondPath013.png");
     min-height: 5in;
-
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
@@ -70,14 +67,31 @@ body {
     border-width: 6px;
     margin: 72px 5px 72px 5px;
 
+    @include md {
+        margin: 99px;
+    }
+
+    @include lg {
+        margin: 146px;
+    }
+
     #OnSeasonText {
-        background-color: #DEA68E;
+        background-color: #DEA68E99;
         color: $white;
-        //margin: 70px 150px 24px 150px;
+        margin: 70px 150px 24px 150px;
         padding: 60px 40px;
         text-align: center;
         vertical-align: middle;
         position: absolute;
+
+        #OnSeasonHeader {
+            background-color: #DEA68E;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-bottom: 6px;
+            padding: 10px;
+
+        }
 
         h1 {
             text-align: center;
@@ -86,6 +100,14 @@ body {
 
         p {
             text-align: center;
+        }
+
+        @include md {
+            margin: 70px 121px 24px 121px;
+        }
+
+        @include lg {
+            margin: 70px 277px 24px 277px;
         }
     }
 }
@@ -113,14 +135,31 @@ body {
     border-width: 6px;
     margin: 72px 5px 72px 5px;
 
+    @include md {
+        margin: 99px;
+    }
+
+    @include lg {
+        margin: 146px;
+    }
+
     #OffSeasonText {
-        background-color: #DEA68E;
+        background-color: #DEA68E99;
         color: $white;
         margin: 70px 150px 24px 150px;
         padding: 60px 40px;
         text-align: center;
         vertical-align: middle;
         position: absolute;
+
+        #OffSeasonHeader {
+            background-color: #DEA68E;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-bottom: 6px;
+            padding: 10px;
+
+        }
 
         h1 {
             text-align: center;
@@ -129,6 +168,14 @@ body {
 
         p {
             text-align: center;
+        }
+
+        @include md {
+            margin: 70px 121px 24px 121px;
+        }
+
+        @include lg {
+            margin: 70px 277px 24px 277px;
         }
     }
 }
@@ -144,7 +191,7 @@ body {
 //********************************
 
 #PermitBG {
-    
+
     grid-area: p;
     background-image: url("../img/whattodo/HD20200601_ANP_ParkOpening_066.png");
     min-height: 5in;
@@ -158,16 +205,37 @@ body {
     border-color: #DEA68E;
     border-width: 6px;
     margin: 72px 5px 72px 5px;
-    
+
+    @include lg {
+        background-position: right;
+        background-size: 100%;
+        background-color: #DEA68E;
+        margin: 146px;
+
+        #PermitText {
+            height: 42%;
+        }
+    }
+
 
     #PermitText {
-        background-color: #DEA68E;
+        background-color: #DEA68E99;
         color: $white;
         margin: 70px 150px 24px 150px;
         padding: 60px 40px;
         text-align: center;
         vertical-align: middle;
         position: absolute;
+
+        #PermitHeader {
+            background-color: #DEA68E;
+            padding: 10px;
+
+            @include lg {
+                padding-top: 120px;
+            }
+
+        }
 
         h1 {
             text-align: center;
@@ -177,8 +245,15 @@ body {
         p {
             text-align: center;
         }
-    }
 
+        @include lg {
+            position: absolute;
+            left: 0px;
+            width: 25%;
+            margin: 400px 200px 400px 150px;
+            background-color: #DEA68E;
+        }
+    }
 }
 
 
@@ -190,7 +265,7 @@ body {
 
 
 #InvolvedBG {
-    
+
     grid-area: i;
     background-image: url("../img/whattodo/HDDDDDIMG_7414_1.png");
     min-height: 5in;
@@ -204,16 +279,36 @@ body {
     border-color: #DEA68E;
     border-width: 6px;
     margin: 72px 5px 72px 5px;
-    
+
+    @include lg {
+        background-position: right;
+        background-size: 100%;
+        background-color: #DEA68E;
+        margin: 146px;
+
+        #PermitText {
+            height: 42%;
+        }
+    }
+
 
     #InvolvedText {
-        background-color: #DEA68E;
+        background-color: #DEA68E99;
         color: $white;
         margin: 70px 150px 24px 150px;
         padding: 60px 40px;
         text-align: center;
         vertical-align: middle;
         position: absolute;
+
+        #InvolvedHeader {
+            background-color: #DEA68E;
+            padding: 10px;
+
+            @include lg {
+                padding-top: 140px;
+            }
+        }
 
         h1 {
             text-align: center;
@@ -223,6 +318,14 @@ body {
         p {
             text-align: center;
         }
-    }
 
+        @include lg {
+            position: absolute;
+            right: 0px;
+            width: 25%;
+            height: 42%;
+            margin: 400px 150px 400px 600px;
+            background-color: #DEA68E;
+        }
+    }
 }

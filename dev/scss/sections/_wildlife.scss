@@ -1,23 +1,5 @@
 #wildlife {
 
-
-    #firstBullet {
-        img {
-            grid-area: o;
-            margin: 30px;
-            //display: none;
-        }
-        @include md {
-            display: grid;
-            grid-template-columns: 125px auto;
-            grid-template-areas:
-                "o h"
-                "o t";
-        }
-
-
-    }
-
     div {
         >h1 {
             background-color: #6D874C;
@@ -29,20 +11,81 @@
                 margin: 0px;
             }
         }
+
+        #learnmorebutton {
+            display: block;
+            margin: 24px auto 24px auto;
+            background-color: #dea68e;
+            border: none;
+            padding: 20px;
+
+            @include md {
+                display: none;
+            }
+
+            @include lg {
+                display: none;
+            }
+
+            @include xl {
+                display: none;
+            }
+        }
     }
 
+    //********************//
+    //first bullet styling//
+    //********************//
+
+
+
+    //*******************************//
+    //are there otters in otter cave?//
+    //*******************************//
+
     #wildlifeheadline {
-        
+
         margin: 72px 6px 24px 6px;
+
+        @include lg {
+            margin-left: 93px;
+            margin-right: 93px;
+        }
     }
 
     p {
-        
         margin: 6px;
     }
 
-    button {}
+    #wildlifeparagraph {
+
+        #xtrawild{
+            display: none;
+        }
+
+        @include md {
+            margin-left: 105px;
+            margin-right: 105px;
+            #xtrawild{
+                display: block;
+            }
+        }
+
+        @include lg {
+            margin-left: 93px;
+            margin-right: 93px;
+            #xtrawild{
+                display: block;
+            }
+        }
+    }
+
+
 }
+
+//*****************************//
+//wildlife etiquette and safety//
+//*****************************//
 
 #EtiquetteBGs {
 
@@ -56,13 +99,60 @@
 
     }
 
-
-
     #etiquetteandsafety {
+        @include md {
+            background-color: #F4EACF;
+            margin-left: 106px;
+            margin-right: 106px;
+        }
+
+        @include lg {
+            margin-left: 267px;
+            margin-right: 267px;
+        }
+
+        @include xl {
+            margin-left: 380px;
+            margin-right: 380px;
+        }
+
         text-align: center;
         margin: 24px 6px 24px 6px;
     }
 
+}
+
+//********************//
+//keep your distance!!//
+//********************//
+
+#firstBullet {
+    img {
+        grid-area: o;
+        margin: 30px;
+        display: none;
+    }
+
+    @include md {
+        margin-left: 55px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-template-areas:
+            "o h"
+            "o t";
+
+        img {
+            display: block;
+        }
+    }
+
+    @include lg {
+        margin-left: 91px;
+    }
+
+    @include xl {
+        margin-left: 170px;
+    }
 }
 
 #wildlifeDistance {
@@ -70,18 +160,6 @@
     text-align: left;
     margin: 16px 215px 16px 0px;
 
-    @include md {
-        text-align: left;
-        //margin: 16px 215px 16px 100px;
-    }
-
-    @include lg {
-        margin: 16px 215px 16px 180px;
-    }
-
-    @include xl {
-        margin: 16px 215px 16px 260px;
-    }
 }
 
 #distanceText {
@@ -89,31 +167,189 @@
     text-align: left;
 }
 
+//********************//
+//stay on the trail!!!//
+//********************//
+
+#secondBullet {
+    img {
+        grid-area: o;
+        margin: 30px;
+        display: none;
+    }
+
+    @include md {
+        margin-left: 55px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-template-areas:
+            "o h"
+            "o t";
+
+        img {
+            display: block;
+        }
+    }
+
+    @include lg {
+        margin-left: 91px;
+    }
+
+    @include xl {
+        margin-left: 170px;
+    }
+}
+
 #wildlifeTrail {
+    grid-area: h;
     text-align: right;
     margin: 16px 0px 16px 215px;
+
+    @include md {
+        text-align: left;
+        margin: 16px 0px 16px 0px;
+    }
+
 }
 
 #trailText {
+    grid-area: t;
     text-align: right;
+
+    @include md {
+        text-align: left;
+    }
+}
+
+//********************//
+//don't feed animals!!//
+//********************//
+
+#thirdBullet {
+    img {
+        grid-area: o;
+        margin: 30px;
+        display: none;
+    }
+
+    @include md {
+        margin-left: 55px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-template-areas:
+            "o h"
+            "o t";
+
+        img {
+            display: block;
+        }
+    }
+
+    @include lg {
+        margin-left: 91px;
+    }
+
+    @include xl {
+        margin-left: 170px;
+    }
 }
 
 #wildlifeFeed {
+    grid-area: h;
     text-align: left;
     margin: 16px 215px 16px 0px;
 }
 
 #feedText {
+    grid-area: t;
     text-align: left;
 }
 
+//******************************************//
+//make your campsite or picnic wildlife safe//
+//******************************************//
+
+#fourthBullet {
+    img {
+        grid-area: o;
+        margin: 30px;
+        display: none;
+    }
+
+    @include md {
+        margin-left: 55px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-template-areas:
+            "o h"
+            "o t";
+
+        img {
+            display: block;
+        }
+    }
+
+    @include lg {
+        margin-left: 91px;
+    }
+
+    @include xl {
+        margin-left: 170px;
+    }
+}
+
 #wildlifeCampsite {
+    grid-area: h;
     text-align: right;
     margin: 16px 0px 16px 175px;
+
+    @include md {
+        text-align: left;
+        margin: 16px 0px 16px 0px;
+    }
 }
 
 #campsiteText {
+    grid-area: t;
     text-align: right;
+
+    @include md {
+        text-align: left;
+    }
+
+}
+
+//**********************//
+//slow down for wildlife//
+//**********************//
+
+#fifthBullet {
+    img {
+        grid-area: o;
+        margin: 30px;
+        display: none;
+    }
+
+    @include md {
+        margin-left: 55px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-template-areas:
+            "o h"
+            "o t";
+
+        img {
+            display: block;
+        }
+    }
+
+    @include lg {
+        margin-left: 91px;
+    }
+
+    @include xl {
+        margin-left: 170px;
+    }
 }
 
 #wildlifeSlow {

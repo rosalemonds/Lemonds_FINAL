@@ -1,10 +1,175 @@
 #news {
-            background-color: #6D874C;
-            color: #F4EACF;
-            padding: 40px 40px 40px 16px;
-            margin: 72px 115px 24px 0px;
+    background-color: #6D874C;
+    color: #F4EACF;
+    padding: 40px 40px 40px 16px;
+    margin: 72px 115px 24px 0px;
 
-            @include md {
-                margin: 72px 0px 24px 0px;
+    @include md {
+        margin: 72px 0px 24px 0px;
+    }
+}
+
+#newsContainer {
+
+    h6 {
+        background-color: #F4EACF;
+        padding: 6px;
+        width: .75in;
+        margin-left: 16px;
+    }
+
+    div {
+
+        #parkloop {
+            display: none;
+        }
+
+        #eaglelake {
+            display: none;
+        }
+
+        #vehiclereg {
+            display: none;
+        }
+
+        h3 {
+            grid-area: t;
+            color: #946D5B;
+            margin: 16px;
+        }
+
+        p {
+            grid-area: p;
+            margin: 16px;
+        }
+
+        h5 {
+            grid-area: d;
+            margin: 16px;
+        }
+
+        #newspic1,
+        #newspic2,
+        #newspic3 {
+            grid-area: i;
+            display: none;
+            width: 100%;
+        }
+
+        hr {
+            grid-area: hr;
+            width: 97%;
+        }
+
+        #newspic3 {
+            display: block;
+        }
+
+
+
+        @include md {
+
+            #parkloop {
+                display: block;
             }
+
+            #eaglelake {
+                display: block;
+            }
+
+            #vehiclereg {
+                display: block;
+            }
+
+            h3 {
+                margin-top: 20px;
+                font-size: 21px;
+            }
+
+            p {
+                margin-bottom: 100px;
+                font-size: 18px;
+            }
+
+            h5 {
+                font-size: 21px;
+            }
+
+            #newspic1,
+            #newspic2,
+            #newspic3 {
+                display: block;
+                width: 3.75in;
+            }
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "d d i"
+            "t t i"
+            "p p i"
+            "hr hr hr";
+
+        }
+
+
+    }
+
+    @include lg {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-areas:
+            "n1 n3"
+            "n2 n3";
+
+
+
+        #news1 {
+            display: block;
+            grid-area: n1;
+
+            img {
+                width: 7in;
+                margin: 20px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        #news2 {
+            display: block;
+            grid-area: n2;
+
+            img {
+                width: 7in;
+                margin: 20px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        #news3 {
+            display: block;
+            grid-area: n3;
+
+            img {
+                width: 3in;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @include xl {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "n1 n2 n3";
+    }
+
 }
